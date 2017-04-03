@@ -1,0 +1,55 @@
+#main,
+.posts
+  +outer-container
+
+.soundcloud-player-small
+  margin:
+    top: $small-margin
+
+.index-article
+  margin:
+    bottom: $large-margin
+  &:hover
+    .post-date
+      color: $medium-gray
+
+.topic-list
+  color: $medium-gray
+  line-height: 1.8em
+
+.posts, .article-detail
+  p
+    font-size: 1.05em
+    line-height: 1.35em
+
+.detail-post-date, .post-date
+  font-size: 1em
+
+.post-date
+  display: block
+  margin:
+    bottom: em(-29px)
+    //left: em(-111px)
+  +shift(-2.6)
+  +media(max-width 938px)
+    display: block
+    +shift(0)
+    margin:
+      bottom: $small-margin
+
+.recent-posts li:before,
+.article-detail li:before
+  content: "• "
+  color: $brand-color
+
+.article-detail h3
+  -webkit-margin-after: 0em
+  -webkit-margin-before: 0em
+  margin:
+    top: em(23px)
+    bottom: em(4px)
+  line-height: 1em
+
+h3.detail-post-topic-list 
+  margin:
+    top: 0px

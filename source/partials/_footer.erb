@@ -1,0 +1,30 @@
+<footer>
+
+  <div class='footer-tags'>
+    <h3>Random Tags</h3>
+    <ul class='random-tag-list'>
+      <% blog.tags.to_a.shuffle[0...20].each do |tag, articles| %>
+      <li><%= link_to "#{tag}", tag_path(tag) %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class='recent-posts'>
+    <h3>Random Interviewees</h3>
+    <ul>
+
+      <% articles = [] %>
+
+      <% blog.articles.each do |article| %>
+        <% articles << article.title %>
+      <% end %>
+
+      <% articles = articles.uniq %>
+
+      <% articles.shuffle[0...10].each do |article| %>
+      <li><%= link_to article, tag_path(article) %></li>
+      <% end %>
+    </ul>
+  </div>
+
+</footer>

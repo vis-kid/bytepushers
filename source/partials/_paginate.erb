@@ -1,0 +1,9 @@
+<section>
+  <% if prev_page %>
+    <div class='pagination-link'><%= link_to '« Newer Stuff', prev_page %></div>
+  <% end %>
+
+  <% if next_page %>
+    <div class='pagination-link'><%= link_to 'Older Stuff »', next_page %></div>
+  <% end %>
+</section>

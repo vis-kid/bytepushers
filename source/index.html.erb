@@ -1,0 +1,12 @@
+---
+
+per_page: 7
+pageable: true
+
+---
+
+<%= partial "partials/index-list" %>
+
+<% if paginate %>
+  <%= partial "partials/paginate", :locals => { :prev_page => prev_page, :next_page => next_page } %>
+<% end %>

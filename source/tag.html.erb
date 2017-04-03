@@ -1,0 +1,27 @@
+---
+pageable: true
+per_page: 12
+---
+<h1 class='tag-header'>Posts tagged: <span class='tagname'><%= tagname %></span></h1>
+
+<ul class='tag-list'>
+  <% page_articles.each_with_index do |article, i| %>
+    <span class='tag-date' ><%= article.date.strftime('%b %e | %Y') %></span>
+    <li class='tag-list-title'><%= link_to article.title, article %></li>
+    <li class='topic-list large-bumper'><%= article.metadata[:page][:topic_list] %></li>
+  <% end %>
+</ul>
+
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>

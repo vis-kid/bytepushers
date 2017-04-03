@@ -1,0 +1,58 @@
+.posts p,
+article.article-detail,
+.index-article,
+.recent-posts,
+.footer-tags,
+.tag-header,
+.tag-list
+  +shift(2)
+  +span-columns(8)
+
+.article-detail h3,
+footer h3,
+.post-title a,
+.tag-header,
+.tag-list-title
+  font-size: 1.7em
+
+.show_notes_display b,
+.article-detail h3,
+.detail-post-date,
+.post-date,
+.tag-date,
+.tag-header
+  color: $light-gray
+
+.posts,
+.article-detail p,
+.post-title a,
+h3.detail-post-topic-list
+  color: darken($medium-gray, 30%)
+
+.article-detail a,
+.detail-post-title,
+.tagname
+  color: $brand-color
+
+a.tag-list-link
+  +transition(all .1s ease-in-out)
+  color: darken($medium-gray, 30%)
+  &:hover
+    border-bottom: none
+    color: $brand-color
+
+.article-detail a,
+.article-detail,
+.recent-posts,
+.footer-tags,
+.navigation
+  font-family: $helvetica
+
+.index-article h2
+  -webkit-margin-before: -0.32em
+
+h3.about-header:first-of-type
+  margin-top: -0.2em
+
+h3.about-header
+  margin-top: em(20px)

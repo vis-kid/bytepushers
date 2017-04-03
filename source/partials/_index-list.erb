@@ -1,0 +1,12 @@
+<div class='posts'>
+  <ul>
+    <% page_articles.each do |article| %>
+      <li>
+        <%= partial "partials/index-list-item-audio", :locals => { :article => article } %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+
+

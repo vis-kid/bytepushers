@@ -1,0 +1,61 @@
+.detail-post-title
+  +media(max-width 830px)
+    font-size: 1.7em
+  font-size: 2em
+  margin:
+    top: 0.4em
+
+.article-detail
+  margin-bottom: $large-margin
+  ul
+    //margin:
+      bottom: $large-margin
+    -webkit-margin-after: 0em
+  li
+    text-indent: -13px
+    -webkit-margin-after: 0em
+  p
+    margin:
+      bottom: 0px
+
+.article-detail p,
+.article-detail li
+  +media(max-width 830px)
+    font-size: 1em
+  font-size: 1.1em
+  line-height: 1.6em
+  color: darken($medium-gray, 30%)
+
+.detail-post-title,
+.article-detail h3,
+.article-detail li
+  //margin:
+    bottom: $small-margin
+
+h3.detail-post-topic-list,
+.tag-list-link
+  +media(max-width 830px)
+    font-size: 1.1em
+  font-size: 1.2em
+  line-height: 1.6em
+  margin:
+    bottom: $small-margin
+
+a.other-episodes
+  font-size: 1.1em
+
+section.tag-list-section
+  margin-bottom: 1em
+
+.show_notes_display p
+  margin-top: 100px
+
+.show_notes_display b
+  font-weight: normal
+  font-size: em(25px)
+  margin-top: 30px
+  margin-bottom: 10px
+
+.other-episodes
+  display: inline-block
+  margin-bottom: em(30px)

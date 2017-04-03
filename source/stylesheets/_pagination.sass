@@ -1,0 +1,24 @@
+.pagination-link
+  +media(max-width 830px)
+    +shift(0.5)
+  +shift(2)
+  background-color: white
+  border: 1px solid #E5E5E5
+  border-radius: 2px
+  max-width:  16.2em
+  padding:
+    top: .5em
+    bottom: .5em
+  margin:
+    bottom: ($large-margin + .2em)
+  &:first-of-type
+    float: left
+  a
+    padding:
+      top: .5em
+      bottom: .5em
+      left: .8em
+      right: .8em
+    color: darken($medium-gray, 30%)
+    font-size: 1.1em
+    box-shadow: 0px 3px 0px rgba(#F6F6F6, .5)
