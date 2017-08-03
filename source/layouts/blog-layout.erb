@@ -2,13 +2,10 @@
 
   <article class='article-detail'>
 
-  <h4 class='detail-post-date'><%= date %></h4>
     <h2 class='detail-post-title'><%= title %></h2>
-    <section class='tag-list-section'>
-      <% current_page.tags.each do |tag| %>
-        <%= print_tags(tag) %>
-      <% end %>
-    </section>
+        <% if topic_list %>
+          <h4 class='topic-list'><%= topic_list %></h4>
+        <% end %>
 
     <% if current_page.data.contentful_id %>
       <div class='soundcloud-player-small'>  
