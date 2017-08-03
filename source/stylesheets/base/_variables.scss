@@ -23,10 +23,14 @@ $large-margin: ($small-margin + $medium-margin);
 // Colors
 $brand-color: #FF0000;
 $brand-color: #4FC29D;
+$brand-color: #000000;
 $blue: #477dca;
 $dark-gray: #333;
+$dark-gray: lighten($brand-color, 30%);
 $medium-gray: #999;
+$medium-gray: lighten($brand-color, 45%);
 $light-gray: #ddd;
+$light-gray: lighten($brand-color, 65%);
 $text-color: darken($medium-gray, 20%);
 
 // Font Colors
