@@ -10,6 +10,12 @@
       <% end %>
     </section>
 
+    <% if current_page.data.contentful_id %>
+      <div class='soundcloud-player-small'>  
+        <figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure>
+      </div>
+    <% end %>
+
     <% if soundcloud_id %>
       <section class='soundcloud-player-big'>
         <iframe 
