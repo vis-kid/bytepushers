@@ -7,11 +7,20 @@
           <h4 class='topic-list'><%= topic_list %></h4>
         <% end %>
 
-    <% if current_page.data.contentful_id %>
-      <div class='soundcloud-player-small'>  
-        <figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure>
-      </div>
-    <% end %>
+
+
+      <div class='slick-container'>  
+  <div class="your-class">
+    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
+    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
+    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
+    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
+    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
+    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
+  </div>
+</div>
+
+
 
   <!--  <% if soundcloud_id %>
       <section class='soundcloud-player-big'>
