@@ -18,6 +18,10 @@ footer h3,
   font-size: 1.7em
   font-size: 2.5em
 
+.detail-post-title
+  +media(max-width 830px)
+    font-size: 1.7em
+
 .show_notes_display b,
 .article-detail h3,
 .detail-post-date,
@@ -25,12 +29,13 @@ footer h3,
 .tag-date,
 .tag-header
   color: $light-gray
+  color: $brand-color
 
 .posts,
 .article-detail p,
 .post-title a,
 h3.detail-post-topic-list
-  color: darken($medium-gray, 30%)
+  color: $brand-color
 
 .article-detail a,
 .detail-post-title,
@@ -40,6 +45,7 @@ h3.detail-post-topic-list
 a.tag-list-link
   +transition(all .1s ease-in-out)
   color: darken($medium-gray, 30%)
+  color: $light-gray
   &:hover
     border-bottom: none
     color: $brand-color
