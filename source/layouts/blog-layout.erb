@@ -7,22 +7,18 @@
           <h4 class='topic-list'><%= topic_list %></h4>
         <% end %>
 
+    <div class='slick-container'>  
+      <div class="your-class">
+      <% current_page.data.contentful_pics.each do |pic_id| %>
+        <div>
+          <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+          </figure>
+        </div>
+      <% end %>
+      </div>
+    </div>
 
-
-      <div class='slick-container'>  
-  <div class="your-class">
-    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
-    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
-    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
-    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
-    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
-    <div><figure class="image-block__figure"><img src="//images.contentful.com/<%= current_page.data.contentful_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image"></figure></div>
-  </div>
-</div>
-
-
-
-  <!--  <% if soundcloud_id %>
+    <% if soundcloud_id %>
       <section class='soundcloud-player-big'>
         <iframe 
           width="100%" 
@@ -32,7 +28,7 @@
           src=<%= big_soundcloud_player %>>
         </iframe>
       </section>
-    <% end %> -->
+    <% end %>
 
   <h3 id='other-episodes'>Interviews</h3>
   <% current_page.data.vimeo_vids.each do |vid_id| %>
