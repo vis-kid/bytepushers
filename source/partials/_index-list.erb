@@ -1,25 +1,25 @@
 <div class='posts'>
   <ul>
     <% page_articles.each do |article| %>
-    <li>
-      <article class="index-article">
-        <span class='post-date'><%= article.date.strftime('%b %d | %Y') %></span><h2 class='post-title'><%= link_to article.title, article %></h2>
+      <li>
+        <article class="index-article">
+        <!---<span class='post-date'><%= article.date.strftime('%b %d | %Y') %></span>--><h2 class='post-title'><%= link_to article.title, article %></h2>
+          <% if article.data.topic_list %>
+          <h3 class='topic-list'><%= article.data.topic_list %></h3>
+          <% end %>
+          
+          <% if article.data.contentful_id %>
+            <%= partial "partials/index-list-contentful-image", :locals => { :article => article } %>
 
-        <% if article.data.topic_list %>
-        <h3 class='topic-list'><%= article.data.topic_list %></h3>
-        <% end %>
+          <% elsif article.data.vimeo_id %>
+            <%= partial "partials/index-list-item-vimeo",       :locals => { :article => article } %>
 
-        <% if article.data.contentful_index_pic %>
-          <%= partial "partials/index-list-contentful-image", :locals => { :article => article } %>
-
-        <% elsif article.data.vimeo_id %>
-          <%= partial "partials/index-list-item-vimeo",       :locals => { :article => article } %>
-
-        <% elsif article.data.soundcloud_id %>
-          <%= partial "partials/index-list-item-audio",       :locals => { :article => article } %>
-        <% end %>
-      </article>
-    </li>
+          <% elsif article.data.soudcloud_id %>
+            <%= partial "partials/index-list-item-audio",       :locals => { :article => article } %>
+          <% end %>
+          <div class='date'><%= article.date.strftime('%b %d | %Y') %></div>
+        </article>
+      </li>
     <% end %>
   </ul>
 </div>
