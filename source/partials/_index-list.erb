@@ -15,7 +15,7 @@
         <% elsif article.data.vimeo_id %>
           <%= partial "partials/index-list-item-vimeo",       :locals => { :article => article } %>
 
-        <% elsif article.data.soudcloud_id %>
+        <% elsif article.data.soundcloud_id %>
           <%= partial "partials/index-list-item-audio",       :locals => { :article => article } %>
         <% end %>
       </article>
