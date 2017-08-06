@@ -7,6 +7,7 @@
           <h4 class='topic-list'><%= topic_list %></h4>
         <% end %>
 
+    <% if current_page.data.contentful_pics %>
     <div class='slick-container'>  
       <div class="carousel">
       <% current_page.data.contentful_pics.each do |pic_id| %>
@@ -17,6 +18,7 @@
       <% end %>
       </div>
     </div>
+    <% end %>
 
     <% if soundcloud_id %>
       <section class='soundcloud-player-big'>
