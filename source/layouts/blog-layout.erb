@@ -11,13 +11,12 @@
     <div class='slick-container'>  
       <div class="carousel">
       <% current_page.data.contentful_pics.each do |pic_id| %>
-        <div>
-          <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
-          </figure>
-        </div>
+        <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+        </figure>
       <% end %>
       </div>
     </div>
+
     <% elsif soundcloud_id %>
     <section class='soundcloud-player-big'>
       <iframe 
@@ -30,9 +29,9 @@
     </section>
     <% end %>
 
-  <% if current_page.data.vimeo_vids %>
-  <h3 id='other-episodes'>Interviews</h3>
-  <% current_page.data.vimeo_vids.each do |vid_id| %>
+    <% if current_page.data.vimeo_vids %>
+    <h3 id='other-episodes'>Interviews</h3>
+    <% current_page.data.vimeo_vids.each do |vid_id| %>
     <div class='vimeo-player vimeo-spacing'> 
       <iframe src="https://player.vimeo.com/video/<%= vid_id %>?color=ababab&portrait=0"
         width="640"
@@ -43,8 +42,8 @@
         allowfullscreen>
       </iframe>
     </div>
-  <% end %>
-  <% end %>
+    <% end %>
+    <% end %>
 
     <!--- <% if interviewee %>
       <h3 id='other-episodes'>Other Episodes</h3>
