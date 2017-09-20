@@ -1,0 +1,22 @@
+Remove transition on logo hover
+
+Caused subtle, weird flickering
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   source/stylesheets/_transitions.sass
+#
+# Changes not staged for commit:
+#	modified:   source/partials/_index-list-item-vimeo.erb
+#	modified:   source/partials/_index-list.erb
+#	modified:   source/posts/2017-01-19-Edo-van-Dijk-152.html.erb.md
+#	modified:   source/posts/2017-01-20-Edo-van-Dijk-153.html.erb.md
+#	modified:   source/stylesheets/_index_posts.sass
+#
+# Untracked files:
+#	slick/
+#	source/posts/2017-06-04-Alexis-154.html.erb.md
+#
