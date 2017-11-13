@@ -6,28 +6,26 @@ body
   background-color: white
 
 #logo
-  +media(max-width 1200px)
-    +shift(1.7)
-  +media(max-width 938px)
-    +shift(1.6)
-  +span-columns(2)
-  +span-columns(2.8)
-  +media(max-width 830px)
-    +shift(0.5)
+  //+media(max-width 1200px)
+  //  +shift(1.7)
+  //+media(max-width 938px)
+  //  +shift(1.6)
+  //+span-columns(2)
+  //+span-columns(2.8)
+  //+media(max-width 830px)
+  //  +shift(0.5)
   filter: drop-shadow(0px 1px 2px rgba(#C8C8C8, 0.3))
   img
+    width: 280px
     +media(max-width 830px)
       margin-left: -5px
     margin:
-      left: 24px
-      left: -31%
-      top: 6px
+      top: 35px
+      left: 43px
  
 header
   +outer-container
-  margin:
-    top: 30px
-    bottom: 40px
+  height: 133px
 
 .navigation
   +media(max-width 1200px)
