@@ -8,3 +8,75 @@ iframe
 .date
   padding-top: 1em
   color: $light-gray
+
+.newsletter-signup
+  +outer-container
+  height: 280px
+  border:
+    top: 1px solid rgba(#979797, .3)
+  margin-top: 150px
+
+.subscribe-text
+  +shift(1)
+  +span-columns(4)
+  font-family: CamptonBook
+  font-size: 24px
+  letter-spacing: 0.1px
+  color: #4a4a4a
+  line-height: 33px
+  margin:
+    top: 103px
+
+.newsletter-box
+  margin-top: 108px
+  +clearfix
+  +shift(1)
+  +span-columns(5)
+
+.newsletter-signup input
+  width: 420px
+  height: 70px
+  border-radius: 2em 0px 0px 2em
+  border: solid 1px #9b9b9b
+  float: left
+
+input.btn-rounded
+  border-radius: 0px 2em 2em 0px
+  background-color: #0060ff
+  border: solid 1px #0060ff
+  font-family: CamptonBoldDemo
+  letter-spacing: 1.8px
+  text-transform: uppercase
+  height: 70px
+  width: 150px
+  float: left
+
+\::-webkit-input-placeholder
+  /* WebKit, Blink, Edge
+  color: #9b9b9b
+  padding-left: 34px
+  font-family: CamptonBook
+  font-size: 20px
+  letter-spacing: 0.4px
+
+\:-moz-placeholder
+  /* Mozilla Firefox 4 to 18
+  color: #9b9b9b
+  padding-left: 34px
+  opacity: 1
+
+\::-moz-placeholder
+  /* Mozilla Firefox 19+
+  color: #9b9b9b
+  padding-left: 34px
+  opacity: 1
+
+\:-ms-input-placeholder
+  /* Internet Explorer 10-11
+  color: #9b9b9b
+  padding-left: 34px
+
+\::-ms-input-placeholder
+  /* Microsoft Edge
+  color: #9b9b9b
+  padding-left: 34px
