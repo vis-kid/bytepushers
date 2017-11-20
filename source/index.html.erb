@@ -11,18 +11,4 @@ pageable: true
   <%= partial "partials/paginate", :locals => { :prev_page => prev_page, :next_page => next_page } %>
 <% end %>
 
-<div class="newsletter-signup">
-
-  <div class="subscribe-text">
-    Subscribe to our mailing list to receive weekly updates.
-  </div>
-
-  <div class="newsletter-box">
-    <form action="">
-      <input type="text" placeholder="email address"/>
-      <input type="submit" value="submit" class="btn-rounded"/>
-    </form>
-  </div>
-
-</div>
-
+<%= partial "partials/newsletter-signup" %>
