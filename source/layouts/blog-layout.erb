@@ -64,13 +64,11 @@
     <h3 class='topic-list'><%= topic_list %></h3>
     <% end %>
 
-    <!--- <% if interviewee %>
-      <h3 id='other-episodes'>Other Episodes</h3>
-      <a class='other-episodes' href="/tags/<%= dasherize(interviewee) %>"><%= interviewee %></a>
-    <% end %> -->
-
     <%= current_article.body %>
+
+    <%= partial "partials/link-interviewees-footer" %>
 
   </article>
 
 <% end %>
+
