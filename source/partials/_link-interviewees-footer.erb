@@ -1,4 +1,19 @@
+<h4>INTERESTING INTERVIEWS YOU MAY ALSO LIKE</h4>
 <% if interviewee %>
   <h3 id='other-episodes'>Other Episodes</h3>
   <a class='other-episodes' href="/tags/<%= dasherize(interviewee) %>"><%= interviewee %></a>
 <% end %>
+
+ <div class='recent-posts'>
+   <ul>
+     <% blog.articles.shuffle[0...3].each do |article| %>
+       <%= article.data.interviewee %>
+       <div class='slick-container'>
+         <figure class="image-block__figure">
+           <img src="//images.contentful.com/<%= article.data.contentful_index_pic %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+         </figure>
+       </div>
+     <% end %>
+   </ul>
+ </div>
+
