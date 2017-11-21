@@ -7,16 +7,7 @@
 
         <h2 class='post-title'><%= title %></h2>
 
-    <% if current_page.data.contentful_pics %>
-    <div class='slick-container'>  
-      <div class="carousel">
-      <% current_page.data.contentful_pics.each do |pic_id| %>
-        <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
-        </figure>
-      <% end %>
-      </div>
-    </div>
-    <% end %>
+    <%= current_article.body %>
 
     <% if current_page.data.vimeo_vids %>
     <!---<h3 id='other-episodes'>Interviews</h3> -->
@@ -64,7 +55,18 @@
     <h3 class='topic-list'><%= topic_list %></h3>
     <% end %>
 
-    <%= current_article.body %>
+    <% if current_page.data.contentful_pics %>
+    <div class='slick-container'>  
+      <div class="carousel">
+      <% current_page.data.contentful_pics.each do |pic_id| %>
+        <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+        </figure>
+      <% end %>
+      </div>
+    </div>
+    <% end %>
+
+
 
     <%= partial "partials/link-interviewees-footer" %>
 
