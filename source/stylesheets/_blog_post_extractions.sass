@@ -21,7 +21,7 @@
   margin:
     top: $small-margin
 
-.index-article
+.index-article, .profile-article
   margin:
     bottom: $large-margin
   border-top: 1px solid rgba(#979797, 0.3)
@@ -67,3 +67,19 @@
 h3.detail-post-topic-list 
   margin:
     top: 0px
+
+.article-body
+  +shift(3)
+  +span-columns(6)
+  
+.vimeo-section
+  +shift(2)
+  +span-columns(8)
+
+.photo-section
+  +shift(3)
+  +span-columns(6)
+
+.interviewee-suggestions
+  +shift(1)
+  +span-columns(10)

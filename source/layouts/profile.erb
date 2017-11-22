@@ -1,42 +1,44 @@
 <% wrap_layout :layout do %>
 
-      <div class='date'><%= current_page.date.strftime('%b %d | %Y') %></div>
+  <article class="profile-article">
 
-      <article class="index-article">
-
-        <h2 class='post-title'><%= title %></h2>
-
-        <%= current_article.body %>
-
-    <% if current_page.data.vimeo_vids %>
-    <!---<h3 id='other-episodes'>Interviews</h3> -->
-    <% current_page.data.vimeo_vids.each do |vid_id| %>
-    <div class='vimeo-player'>
-      <iframe src="https://player.vimeo.com/video/<%= vid_id %>?color=ababab&portrait=0"
-        width="950"
-        height="534"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen>
-      </iframe>
+    <div class="article-body">
+      <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
+      <h2 class='post-title'><%= title %></h2>
+      <%= current_article.body %>
     </div>
-    <% end %>
-    <% end %>
 
-    <% if current_page.data.vimeo_id %>
-    <!---<h3 id='other-episodes'>Interviews</h3> -->
-    <div class='vimeo-player'>
-      <iframe src="https://player.vimeo.com/video/<%= current_page.data.vimeo_id %>?color=ababab&portrait=0"
-        width="950"
-        height="534"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen>
-      </iframe>
+    <div class="vimeo-section">
+      <% if current_page.data.vimeo_vids %>
+      <!---<h3 id='other-episodes'>Interviews</h3> -->
+      <% current_page.data.vimeo_vids.each do |vid_id| %>
+      <div class='vimeo-player'>
+        <iframe src="https://player.vimeo.com/video/<%= vid_id %>?color=ababab&portrait=0"
+          width="950"
+          height="534"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen>
+        </iframe>
+      </div>
+      <% end %>
+      <% end %>
+
+      <% if current_page.data.vimeo_id %>
+      <!---<h3 id='other-episodes'>Interviews</h3> -->
+      <div class='vimeo-player'>
+        <iframe src="https://player.vimeo.com/video/<%= current_page.data.vimeo_id %>?color=ababab&portrait=0"
+          width="950"
+          height="534"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen>
+        </iframe>
+      </div>
+      <% end %>
     </div>
-    <% end %>
 
     <% if soundcloud_id %>
     <section class='soundcloud-player-big'>
@@ -54,18 +56,22 @@
     <h3 class='topic-list'><%= topic_list %></h3>
     <% end %>
 
-    <% if current_page.data.contentful_pics %>
-    <div class='slick-container'>  
-      <div class="carousel">
-      <% current_page.data.contentful_pics.each do |pic_id| %>
-        <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
-        </figure>
-      <% end %>
+    <div class="photo-section">
+      <% if current_page.data.contentful_pics %>
+      <div class='slick-container'>  
+        <div class="carousel">
+        <% current_page.data.contentful_pics.each do |pic_id| %>
+          <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+          </figure>
+        <% end %>
+        </div>
       </div>
+      <% end %>
     </div>
-    <% end %>
 
-    <%= partial "partials/link-interviewees-footer" %>
+    <div class="interviewee-suggestions">
+      <%= partial "partials/link-interviewees-footer" %>
+    </div>
 
   </article>
 
