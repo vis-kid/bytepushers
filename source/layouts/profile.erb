@@ -58,14 +58,19 @@
     <h3 class='topic-list'><%= topic_list %></h3>
     <% end %>
 
+    <div class="photo-section-border"></div>
+
     <div class="photo-section">
+    <h3 class="photo-section-header">CHECK OUT <%= current_page.data.interviewee.upcase %>’S WORKSPACE IN SINGAPORE</h3>
       <% if current_page.data.contentful_pics %>
       <div class='slick-container'>  
         <div class="carousel">
+        <ul>
         <% current_page.data.contentful_pics.each do |pic_id| %>
-          <figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
-          </figure>
+          <li><figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+          </figure></li>
         <% end %>
+        </ul>
         </div>
       </div>
       <% end %>
