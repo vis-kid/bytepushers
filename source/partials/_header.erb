@@ -1,12 +1,15 @@
-<header>
-  <div id="logo">
-    <% link_to '/' do %><%= image_tag 'bytepushers.svg', alt: 'Bytepushers Logo' %><% end %>
-  </div>
-  <nav class="navigation">
-    <ul class="nav-list">
-      <!--<li><%= link_to 'fork!', 'https://github.com/vis-kid/betweenscreens' %></li>-->
-      <li><%= link_to 'about', '/pages/about.html' %></li>
-      <li><%= link_to 'people', '/people.html' %></li>
-    </ul>
-  </nav>
-</header>
+<div class="header-wrapper">
+  <header>
+    <div id="logo">
+      <% link_to '/' do %><%= image_tag 'bytepushers.svg', alt: 'Bytepushers Logo' %><% end %>
+    </div>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <!--<li><%= link_to 'fork!', 'https://github.com/vis-kid/betweenscreens' %></li>-->
+        <li><%= link_to 'about', '/pages/about.html' %></li>
+        <li><%= link_to 'people', '/people.html' %></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header-border"></div>
+</div>
