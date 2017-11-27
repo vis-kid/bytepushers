@@ -1,11 +1,10 @@
-
 <% wrap_layout :layout do %>
 
-      <div class='date'><%= current_page.date.strftime('%b %d | %Y') %></div>
+  <div class='date'><%= current_page.date.strftime('%b %d | %Y') %></div>
 
-      <article class="index-article">
+  <article class="index-article">
 
-        <h2 class='post-title'><%= title %></h2>
+    <h2 class='post-title'><%= title %></h2>
 
     <% if current_page.data.vimeo_vids %>
     <!---<h3 id='other-episodes'>Interviews</h3> -->
@@ -64,12 +63,12 @@
     </div>
     <% end %>
 
-
     <%= current_article.body %>
-
-    <%= partial "partials/interviewee-suggestions" %>
 
   </article>
 
-<% end %>
+  <div class="article-border"></div>
 
+    <%= partial "partials/interviewee-suggestions" %>
+
+<% end %>

@@ -62,8 +62,20 @@ footer
       right: $small-margin
 
 .recent-posts
-  +span-columns(10)
   margin:
     bottom: $large-margin
   li
     text-indent: -12px
+
+.interviewee-suggestions
+
+.random-profiles-container
+  +span-columns(12)
+  h4
+    text-align: center
+
+.interviewee-suggestion-item
+  +span-columns(3)
+  +shift(.518)
+  &:first-of-type
+    +shift(1)

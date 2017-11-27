@@ -1,21 +1,22 @@
- <div class='recent-posts'>
+<!--<div class="interviewee-suggestions">
 
-   <h4>INTERESTING INTERVIEWS YOU MAY ALSO LIKE</h4>
-   <% if interviewee %>
-     <h3 id='other-episodes'>Other Episodes</h3>
-     <a class='other-episodes' href="/tags/<%= dasherize(interviewee) %>"><%= interviewee %></a>
-   <% end %>
+    <% if interviewee %>
+      <h3 id='other-episodes'>Other Episodes</h3>
+      <a class='other-episodes' href="/tags/<%= dasherize(interviewee) %>"><%= interviewee %></a>
+    <% end %>
+  </div>
+-->
 
-   <ul>
-     <% blog.articles.shuffle[0...3].each do |article| %>
-       <%= article.data.interviewee %>
-       <li>
-         <div class='slick-container'>
-           <figure class="image-block__figure">
-             <img src="//images.contentful.com/<%= article.data.contentful_index_pic %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
-           </figure>
-         </div>
-       </li>
-     <% end %>
-   </ul>
- </div>
+<div class="random-profiles-container">
+  <h4>INTERESTING INTERVIEWS YOU MAY ALSO LIKE</h4>
+</div>
+
+  <ul class="suggestion-list">
+    <% blog.articles.shuffle.uniq[0...3].each do |article| %>
+    <li class="interviewee-suggestion-item">
+      <img src="//images.contentful.com/<%= article.data.contentful_index_pic %>">
+      <%= article.data.interviewee %>
+      <a class='other-episodes' href="/tags/<%= dasherize(article.data.interviewee) %>"><%= article.data.interviewee %></a>
+    </li>
+    <% end %>
+  </ul>
