@@ -33,7 +33,6 @@ iframe
 
 .newsletter-box
   margin-top: 108px
-  +clearfix
   +shift(1)
   +span-columns(6)
   +media(max-width 1250px)
@@ -41,18 +40,22 @@ iframe
     margin-top: 48px
 
 .newsletter-signup input
-  width: 434px
+  float: left
+  +span-columns(7.5)
   height: 70px
   border-radius: 2em 0px 0px 2em
   border: solid 1px #0060ff
-  float: left
+  margin-right: 0px
+  display: inline-block
   +media(max-width 1250px)
     +span-columns(8)
     +shift(2)
     +clearfix
     border-radius: 2em 2em
+    float: left
 
 input.btn-rounded
+  float: left
   border-radius: 0px 2em 2em 0px
   background-color: #0060ff
   border: solid 1px #0060ff
@@ -61,13 +64,13 @@ input.btn-rounded
   text-transform: uppercase
   height: 70px
   width: 150px
-  float: left
   &:hover
     background-color: #FFFFFF
     color: #0060ff
     border-left: none
   +media(max-width 1250px)
     +shift(5)
+    float: left
     border-radius: 2em 2em
     margin:
       top: 29px
