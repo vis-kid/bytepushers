@@ -20,12 +20,25 @@ footer
   color: #9b9b9b
   a
     color: #0060ff
+  +media(max-width 1250px)
+    +span-columns(10)
+    +clearfix
+    text-align: center
+    margin:
+      top: 33px
+      bottom: 0px
 
 .footer-links
   +span-columns(4)
+  +media(max-width 1250px)
+    +span-columns(12)
+
+.social-links-wrapper
+  +media(max-width 1250px)
+    +span-columns(6)
+    +shift(3)
 
 .social-links
-  +clearfix
   float: right
   font-family: Campton
   font-size: 24px
@@ -35,6 +48,13 @@ footer
     top: 26px
   a
     color: #0060ff
+  +media(max-width 1250px)
+    display: inline-block
+    width: 25%
+    text-align: center
+    margin:
+      left: 0px
+      bottom: 26px
 
 .random-tag-list
   -webkit-margin-after: -0.5em
