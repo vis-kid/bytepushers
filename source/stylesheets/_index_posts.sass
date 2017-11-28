@@ -15,6 +15,7 @@ iframe
     top: 1px solid rgba(#979797, .3)
   margin-top: 150px
 
+
 .subscribe-text
   +shift(1)
   +span-columns(4)
@@ -25,12 +26,19 @@ iframe
   line-height: 33px
   margin:
     top: 103px
+  +media(max-width 1250px)
+    +span-columns(10)
+    text-align: center
+    margin-top: 49px
 
 .newsletter-box
   margin-top: 108px
   +clearfix
   +shift(1)
   +span-columns(6)
+  +media(max-width 1250px)
+    +span-columns(10)
+    margin-top: 48px
 
 .newsletter-signup input
   width: 434px
@@ -38,6 +46,11 @@ iframe
   border-radius: 2em 0px 0px 2em
   border: solid 1px #0060ff
   float: left
+  +media(max-width 1250px)
+    +span-columns(8)
+    +shift(2)
+    +clearfix
+    border-radius: 2em 2em
 
 input.btn-rounded
   border-radius: 0px 2em 2em 0px
@@ -53,6 +66,15 @@ input.btn-rounded
     background-color: #FFFFFF
     color: #0060ff
     border-left: none
+  +media(max-width 1250px)
+    +shift(5)
+    border-radius: 2em 2em
+    margin:
+      top: 29px
+      bottom: 63px
+    &:hover
+      border-left: 1px solid #0060ff
+
 
 \::-webkit-input-placeholder
   /* WebKit, Blink, Edge
