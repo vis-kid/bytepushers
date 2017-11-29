@@ -53,6 +53,9 @@ iframe
     +clearfix
     border-radius: 2em 2em
     float: left
+  +media(max-width 830px)
+    +shift(1)
+    +span-columns(10)
 
 input.btn-rounded
   float: left
@@ -77,6 +80,8 @@ input.btn-rounded
       bottom: 63px
     &:hover
       border-left: 1px solid #0060ff
+  +media(max-width 830px)
+    +shift(4)
 
 
 \::-webkit-input-placeholder
