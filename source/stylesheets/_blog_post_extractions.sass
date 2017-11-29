@@ -81,6 +81,12 @@ h3.detail-post-topic-list
   line-height: 27px
   letter-spacing: 0px
   margin-bottom: 100px
+  +media(max-width 1250px)
+    +shift(2)
+    +span-columns(8)
+  +media(max-width 830px)
+    +shift(1)
+    +span-columns(10)
 
 .article-border,
 .suggestions-border
@@ -102,6 +108,9 @@ h3.detail-post-topic-list
 .vimeo-section
   +shift(2)
   +span-columns(8)
+  +media(max-width 830px)
+    +shift(1)
+    +span-columns(10)
 
 .vimeo-player
   margin-bottom: 110px
