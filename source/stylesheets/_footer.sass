@@ -86,8 +86,6 @@ footer
   li
     text-indent: -12px
 
-.interviewee-suggestions
-
 .random-profiles-container
   +span-columns(12)
   margin-bottom: 124px
@@ -103,8 +101,14 @@ footer
 .interviewee-suggestion-item
   +span-columns(3)
   +shift(.518)
-  margin-bottom: 85px
+  margin-top: 85px
   &:first-of-type
     +shift(1)
-  a
-    color: #0060ff
+  +media(max-width 850px)
+    +span-columns(6)
+    +shift(3)
+    &:first-of-type
+      +shift(3)
+
+.interviewee-suggestion-item a
+  color: #0060ff
