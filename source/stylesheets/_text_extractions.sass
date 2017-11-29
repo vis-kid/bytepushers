@@ -78,6 +78,10 @@ h2.post-title
   margin:
     top: 55px
     bottom: 55px
+
+h2.post-title
+  +media(max-width 1250px)
+    text-align: center
   
 h3.topic-list
   font-family: CamptonBook
@@ -85,11 +89,6 @@ h3.topic-list
   letter-spacing: 1px
   color: #4a4a4a
   margin-top: 55px
-
-h2.post-title,
-h3.topic-list
-  +media(max-width 1250px)
-    text-align: center
 
 .date
   +shift(1)
