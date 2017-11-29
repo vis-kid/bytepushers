@@ -8,6 +8,11 @@ article.article-detail,
   +span-columns(8)
   //+span-columns(6.5)
 
+.index-article
+  +media(max-width 1250px)
+    +shift(1)
+    +span-columns(10)
+
 .article-detail h3,
 footer h3,
 .detail-post-title,
@@ -80,6 +85,11 @@ h3.topic-list
   letter-spacing: 1px
   color: #4a4a4a
   margin-top: 55px
+
+h2.post-title,
+h3.topic-list
+  +media(max-width 1250px)
+    text-align: center
 
 .date
   +shift(1)
