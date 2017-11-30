@@ -28,9 +28,6 @@
 .profile-article
   +clearfix
 
-.profile-article.post-title
-  margin-bottom: 200px
-
 .index-article
   +clearfix
 
@@ -43,6 +40,10 @@
   p
     font-size: 1.05em
     line-height: 1.35em
+
+.profile-article
+  p
+    padding-bottom: 14px
 
 .detail-post-date, .post-date
   font-size: 1em
@@ -161,11 +162,18 @@ h3.detail-post-topic-list
 
 .profile-header
   +span-columns(6 of 6)
+  margin-bottom: 55px
+
+.profile-header .post-title
+  margin:
+    top: 34px
+    bottom: 34px
 
 .profilepic-wrapper
   +span-columns(2 of 6)
 
 h3.company-name
+  +span-columns(4 of 6)
   color: #4a4a4a
   font-size: 28px
   line-height: 52px
