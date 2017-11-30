@@ -3,8 +3,16 @@
   <article class="profile-article">
 
     <div class="article-body">
-      <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
-      <h2 class='post-title'><%= title %></h2>
+      <div class="profile-header">
+        <% if current_page.data.contentful_index_pic %>
+          <%= partial "partials/profile-contentful-image" %>
+        <% end %>
+        <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
+        <h2 class='post-title'><%= title %></h2>
+        <% if current_page.data.company %>
+        <h3 class="company-name"><%= current_page.data.company %></h3>
+        <% end %>
+      </div>
       <%= current_article.body %>
     </div>
 
