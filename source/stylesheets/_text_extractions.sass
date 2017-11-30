@@ -1,6 +1,5 @@
 .posts p,
 article.article-detail,
-.index-article,
 .footer-tags,
 .tag-header,
 .tag-list
@@ -9,6 +8,8 @@ article.article-detail,
   //+span-columns(6.5)
 
 .index-article
+  +shift(3)
+  +span-columns(8)
   +media(max-width 1250px)
     +shift(1)
     +span-columns(10)
