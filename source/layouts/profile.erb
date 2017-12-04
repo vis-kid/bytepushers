@@ -1,18 +1,20 @@
 <% wrap_layout :layout do %>
 
-  <article class="profile-article">
+ <article class="profile-article">
 
-    <div class="article-body">
+      <% if current_page.data.contentful_index_pic %>
+        <%= partial "partials/profile-contentful-image" %>
+      <% end %>
+
       <div class="profile-header">
-        <% if current_page.data.contentful_index_pic %>
-          <%= partial "partials/profile-contentful-image" %>
-        <% end %>
         <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
         <h2 class='post-title'><%= title %></h2>
         <% if current_page.data.company %>
         <h3 class="company-name"><%= current_page.data.company %></h3>
         <% end %>
       </div>
+    <div class="article-body">
+
       <%= current_article.body %>
     </div>
 
@@ -62,9 +64,10 @@
     </section>
     <% end %>
 
-    <% if topic_list %>
+    <!--<% if topic_list %>
     <h3 class='topic-list'><%= topic_list %></h3>
     <% end %>
+    -->
 
     <div class="photo-section-border"></div>
 
@@ -85,6 +88,8 @@
     </div>
 
   </article>
+
+  <div class="suggestions-border"></div>
 
   <%= partial "partials/interviewee-suggestions" %>
 

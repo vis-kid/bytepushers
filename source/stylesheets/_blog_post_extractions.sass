@@ -94,6 +94,9 @@ h3.detail-post-topic-list
     +shift(1)
     +span-columns(10)
 
+.article-body p
+  color: #4a4a4a
+
 .article-border,
 .suggestions-border
   +shift(1)
@@ -163,19 +166,33 @@ h3.detail-post-topic-list
   height: 100%
 
 .profile-header
-  +span-columns(6 of 6)
+  +span-columns(4)
   margin-bottom: 55px
+  height: 215px
+  +media(max-width 1250px)
+    +span-columns(6)
+  +media(max-width 830px)
+    +span-columns(7)
 
-.profile-header .post-title
+.profile-header h2.post-title
+  text-align: left
   margin:
-    top: 34px
-    bottom: 34px
+    top: 51px
+    bottom: 33px
 
 .profilepic-wrapper
-  +span-columns(2 of 6)
-
+  +shift(3)
+  +span-columns(2)
+  height: 215px
+  width: 215px
+  +media(max-width 1250px)
+    +shift(2)
+  +media(max-width 830px)
+    +shift(1)
+  
 h3.company-name
-  +span-columns(4 of 6)
-  color: #4a4a4a
+  +span-columns(4)
+  float: none
+  color: #9b9b9b
   font-size: 28px
   line-height: 52px
