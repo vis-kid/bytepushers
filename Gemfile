@@ -10,6 +10,8 @@ gem 'middleman-blog'
 
 gem 'middleman-livereload'
 
+gem 'middleman-sprockets', '~> 4.1.0'
+
 #gem "middleman-deploy"
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 

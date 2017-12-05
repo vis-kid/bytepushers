@@ -55,6 +55,8 @@ page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 activate :livereload
 
+activate :sprockets
+
 set :relative_links, true
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -66,11 +68,11 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
-activate :external_pipeline,
-  name: :gulp,
-  command: build? ? 'npm run production' : 'npm run gulp',
-  source: ".tmp",
-  latency: 1
+#activate :external_pipeline,
+#  name: :gulp,
+#  command: build? ? 'npm run production' : 'npm run gulp',
+#  source: ".tmp",
+#  latency: 1
 
 # Build-specific configuration
 configure :build do
