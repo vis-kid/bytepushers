@@ -6,3 +6,7 @@ $( document ).ready(function() {
       $("nav ul").toggleClass('hidden');
   });
 });
+
+$( document ).ready(function() {
+  alert( "document loaded" );
+});
