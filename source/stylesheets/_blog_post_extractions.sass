@@ -174,6 +174,8 @@ h3.detail-post-topic-list
   +media(max-width 830px)
     +span-columns(7)
   +media(max-width 725px)
+    +shift(1)
+    +span-columns(10)
     margin-bottom: 5px
 
 .profile-header h2.post-title
@@ -185,6 +187,13 @@ h3.detail-post-topic-list
     margin:
       top: 31px
       bottom: 9px
+    text-align: center
+
+.profile-header h2.post-title,
+.profile-header .profile-date,
+.profile-header h3.company-name
+  +media(max-width 725px)
+    text-align: center
 
 .profilepic-wrapper
   +shift(3)
@@ -196,11 +205,11 @@ h3.detail-post-topic-list
   +media(max-width 830px)
     +shift(1)
   +media(max-width 725px)
-    height: 170px
-    width: 170px
+    +shift(3.5)
+    +span-columns(5)
+    margin-bottom: 118px
   
 h3.company-name
-  +span-columns(4)
   float: none
   color: #9b9b9b
   font-size: 28px
