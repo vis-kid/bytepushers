@@ -14,7 +14,7 @@ topic_list: Creative Director | Foreign Policy Design Group | Singapore
 tags: Edo van Dijk, Singapore , Creative scene , Startups , Fintech , Investors , Universities , Asian startups , WeChat , Jakarta , Uber competition , Contactless payments , Fast decisions , Innovation mindset , Chinese backgrounds , Religious coexistence
 
 contentful_index_pic: hen9o3hfyeuh/3xradTJaNGEssYqCKcsQgs/58da6398c0b0a611cb539dd1366a99fd/Yah-Leng_Yu_Profile_Pic.jpg
-contentful_profile_pic: hen9o3hfyeuh/7mayRd4TBKE200iGu08amg/9b1ef0eb4ffbc20b069a59b02e3d60fd/Yah-Leng_Yu_Profile_Pic.png
+contentful_profile_pic: hen9o3hfyeuh/xob9bqP2KGSguuSAAMig8/b94ff52fd20c07b769cfb896f8eafd09/Yah-Leng_Yu_Profile_Blue_Frame_.png
 
 vimeo_vids:
 - 236339474
