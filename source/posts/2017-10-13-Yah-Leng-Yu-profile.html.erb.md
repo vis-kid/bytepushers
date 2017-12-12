@@ -6,8 +6,8 @@ company: Foreign Policy Design Group
 layout: profile
 
 date: 2017-10-13
-episode_number: 01
-category: Design
+episode_number: 05
+category: Profile
 
 topic_list: Creative Director | Foreign Policy Design Group | Singapore
 
