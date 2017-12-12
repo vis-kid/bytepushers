@@ -12,20 +12,6 @@
 </div>
 
   <ul class="suggestion-list">
-    <% blog.articles.shuffle.uniq[0...3].each do |article| %>
-    <li class="interviewee-suggestion-item">
-      <img src="//images.contentful.com/<%= article.data.contentful_index_pic %>">
-      <%= article.data.interviewee %>
-      <a class='other-episodes' href="/tags/<%= dasherize(article.data.interviewee) %>"><%= article.data.interviewee %></a>
-    </li>
-    <% end %>
-  </ul>
-
-<div class="random-profiles-container">
-  <h4>INTERESTING INTERVIEWS YOU MAY ALSO LIKE</h4>
-</div>
-
-  <ul class="suggestion-list">
     <% blog.articles.select{ |article| article.data.category == 'Profile' }.shuffle.uniq[0...3].each do |a| %>
     <li class="interviewee-suggestion-item">
       <img src="//images.contentful.com/<%= a.data.contentful_profile_pic %>">
