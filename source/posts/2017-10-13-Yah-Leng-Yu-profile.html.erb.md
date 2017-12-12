@@ -1,5 +1,5 @@
 ---
-title: Yah-Leng Yu
+title: Yah-Leng Yu Profile
 interviewee: Yah-Leng Yu
 company: Foreign Policy Design Group
 
@@ -9,7 +9,7 @@ date: 2017-10-13
 episode_number: 01
 category: Design
 
-topic_list: Sinapore | Design | Creative Director
+topic_list: Creative Director | Foreign Policy Design Group | Singapore
 
 tags: Edo van Dijk, Singapore , Creative scene , Startups , Fintech , Investors , Universities , Asian startups , WeChat , Jakarta , Uber competition , Contactless payments , Fast decisions , Innovation mindset , Chinese backgrounds , Religious coexistence
 
