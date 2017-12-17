@@ -1,98 +1,94 @@
 <% wrap_layout :layout do %>
 
- <article class="profile-article">
+    <article class="profile-article">
 
-      <% if current_page.data.contentful_index_pic %>
-        <%= partial "partials/profile-contentful-image" %>
-      <% end %>
-
-      <div class="profile-header">
-        <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
-        <h2 class='post-title'><%= interviewee %></h2>
-        <% if current_page.data.company %>
-        <h3 class="company-name"><%= current_page.data.company %></h3>
-        <% end %>
-      </div>
-    <div class="article-body">
-
-      <%= current_article.body %>
-    </div>
-
-    <div class="article-border"></div>
-
-    <div class="vimeo-section">
-      <% if current_page.data.vimeo_vids %>
-      <!---<h3 id='other-episodes'>Interviews</h3> -->
-      <% current_page.data.vimeo_vids.each do |vid_id| %>
-      <div class='vimeo-player'>
-        <div class='embed-container'>
-          <iframe src="https://player.vimeo.com/video/<%= vid_id %>?color=ababab&portrait=0"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      <% end %>
-      <% end %>
-
-      <% if current_page.data.vimeo_id %>
-      <!---<h3 id='other-episodes'>Interviews</h3> -->
-      <div class='vimeo-player'>
-        <div class='embed-container'>
-          <iframe src="https://player.vimeo.com/video/<%= current_page.data.vimeo_id %>?color=ababab&portrait=0"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen>
-          </iframe>
-        </div>
-      <% end %>
-    </div>
-   </div>
-
-    <% if soundcloud_id %>
-    <section class='soundcloud-player-big'>
-      <iframe 
-        width="100%" 
-        height="450" 
-        scrolling="no" 
-        frameborder="no" 
-        src=<%= big_soundcloud_player %>>
-      </iframe>
-    </section>
+    <% if current_page.data.contentful_index_pic %>
+      <%= partial "partials/profile-contentful-image" %>
     <% end %>
+       <div class="profile-header">
+         <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
+         <h2 class='post-title'><%= interviewee %></h2>
+         <% if current_page.data.company %>
+         <h3 class="company-name"><%= current_page.data.company %></h3>
+         <% end %>
+       </div>
 
-    <!--<% if topic_list %>
-    <h3 class='topic-list'><%= topic_list %></h3>
-    <% end %>
-    -->
+       <div class="article-body">
+         <%= current_article.body %>
+       </div>
+       <div class="article-border"></div>
 
-    <% if current_page.data.contentful_pics %>
-    <div class="photo-section-border"></div>
+       <div class="vimeo-section">
+         <% if current_page.data.vimeo_vids %>
+         <!---<h3 id='other-episodes'>Interviews</h3> -->
+         <% current_page.data.vimeo_vids.each do |vid_id| %>
+         <div class='vimeo-player'>
+           <div class='embed-container'>
+             <iframe src="https://player.vimeo.com/video/<%= vid_id %>?color=ababab&portrait=0"
+               frameborder="0"
+               webkitallowfullscreen
+               mozallowfullscreen
+               allowfullscreen>
+             </iframe>
+           </div>
+         </div>
 
-    <div class="photo-section">
-    <h3 class="photo-section-header">CHECK OUT <%= current_page.data.interviewee.upcase %>’S WORKSPACE IN SINGAPORE</h3>
-      <% if current_page.data.contentful_pics %>
-      <div class='slick-container'>
-        <div class="carousel">
-        <ul>
-        <% current_page.data.contentful_pics.each do |pic_id| %>
-          <li><figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
-          </figure></li>
-        <% end %>
-        </ul>
-        </div>
-      </div>
-      <% end %>
-    </div>
-    <% end %>
+         <% end %>
+         <% end %>
 
-  </article>
+         <% if current_page.data.vimeo_id %>
+         <!---<h3 id='other-episodes'>Interviews</h3> -->
+         <div class='vimeo-player'>
+           <div class='embed-container'>
+             <iframe src="https://player.vimeo.com/video/<%= current_page.data.vimeo_id %>?color=ababab&portrait=0"
+               frameborder="0"
+               webkitallowfullscreen
+               mozallowfullscreen
+               allowfullscreen>
+             </iframe>
+           </div>
+         </div>
+         <% end %>
+       </div><!-- /vimeo-section -->
 
-  <div class="suggestions-border"></div>
+       <% if soundcloud_id %>
+       <section class='soundcloud-player-big'>
+         <iframe 
+           width="100%" 
+           height="450" 
+           scrolling="no" 
+           frameborder="no" 
+           src=<%= big_soundcloud_player %>>
+         </iframe>
+       </section>
+       <% end %>
 
-  <%= partial "partials/interviewee-suggestions" %>
+       <!--<% if topic_list %>
+       <h3 class='topic-list'><%= topic_list %></h3>
+       <% end %>
+       -->
 
+       <% if current_page.data.contentful_pics %>
+       <div class="photo-section-border"></div>
+
+       <div class="photo-section">
+         <h3 class="photo-section-header">CHECK OUT <%= current_page.data.interviewee.upcase %>’S WORKSPACE IN SINGAPORE</h3>
+         <% if current_page.data.contentful_pics %>
+         <div class='slick-container'>
+           <div class="carousel">
+             <ul>
+             <% current_page.data.contentful_pics.each do |pic_id| %>
+               <li><figure class="image-block__figure"><img src="//images.contentful.com/<%= pic_id %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+               </figure></li>
+             <% end %>
+             </ul>
+           </div>
+         </div>
+         <% end %>
+       </div>
+       <% end %>
+    </article>
+
+    <div class="suggestions-border"></div>
+    <%= partial "partials/interviewee-suggestions" %>
 <% end %>
