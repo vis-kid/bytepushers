@@ -85,35 +85,3 @@ footer
     bottom: $large-margin
   li
     text-indent: -12px
-
-.random-profiles-container
-  +span-columns(12)
-  margin-bottom: 124px
-  margin-top: 124px
-  h4
-    text-align: center
-    font-family: CamptonBoldDemo
-    font-size: 24px
-    letter-spacing: 1.3px
-    color: #9b9b9b
-    font-weight: bold
-  +media(max-width 850px)
-    +shift(1)
-    +span-columns(10)
-
-.interviewee-suggestion-item
-  +span-columns(3)
-  +shift(.518)
-  margin-bottom: 85px
-  &:first-of-type
-    +shift(1)
-  +media(max-width 850px)
-    +span-columns(6)
-    +shift(3)
-    &:first-of-type
-      +shift(3)
-  +media(max-width 500px)
-    +span-columns(8)
-    +shift(2)
-    &:first-of-type
-      +shift(2)
