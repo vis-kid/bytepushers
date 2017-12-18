@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Founder & CEO | 99.co
 
-tags:
+tags: Singapore | Founder | Investor
 
 contentful_index_pic: hen9o3hfyeuh/2dCUgAabqIEAWKm6GCKwy4/c46e06fb17fd1f3c1cb59d249627623d/Darius_Cheung_01.jpg
 contentful_profile_pic: hen9o3hfyeuh/7GV6OntgK4q8KuykAe2Qwo/d18cb2bad9d6b5d66f7b4eeab6b9be7f/Darius_Cheung_Blue_Frame.jpg
