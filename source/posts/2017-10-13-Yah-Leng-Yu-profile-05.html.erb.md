@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Creative Director | Foreign Policy Design Group | Singapore
 
-tags:
+tags: Singapore | Creative Director | Design
 
 contentful_index_pic: hen9o3hfyeuh/3xradTJaNGEssYqCKcsQgs/58da6398c0b0a611cb539dd1366a99fd/Yah-Leng_Yu_Profile_Pic.jpg
 contentful_profile_pic: hen9o3hfyeuh/xob9bqP2KGSguuSAAMig8/b94ff52fd20c07b769cfb896f8eafd09/Yah-Leng_Yu_Profile_Blue_Frame_.png

@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: VP & Software Engineer | Go-Jek
 
-tags:
+tags: Singapore | Software Engineer | Startup
 
 contentful_index_pic: hen9o3hfyeuh/4zqwnYASe404oYOCu8Ymw8/8d5cf81c8705aaf1c2f7ae984ec31bb0/Nicole_Zhu_Portrait.jpg
 contentful_profile_pic: hen9o3hfyeuh/5j7WQJLkTmo4q2Aikqeamq/5ca3b61fa70571909d8029aa1262a61a/Nicole_Zhu_Blue_Frame.jpg

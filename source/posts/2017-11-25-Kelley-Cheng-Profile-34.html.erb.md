@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Creative Director | The Press Room
 
-tags:
+tags: Singapore | Creative Director | Design
 
 contentful_index_pic: hen9o3hfyeuh/2IDhzxYE5ygaGEWI2ouSyu/f501377c3210c0729e118a512364685f/Kelley_Cheng.jpg
 contentful_profile_pic: hen9o3hfyeuh/5ChT25NIOIWysWKcgkmUWg/4a28f1b6951e1c553dd4bfb3a55b6e29/Kelley_Cheng_Blue_Frame.jpg

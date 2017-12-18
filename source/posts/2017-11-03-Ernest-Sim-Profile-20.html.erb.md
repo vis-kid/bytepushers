@@ -11,7 +11,7 @@ category: Profile
 
 topic_list:
 
-tags:
+tags: Singapore | Co-Founder | CTO
 
 contentful_index_pic: hen9o3hfyeuh/6XE7UvPCogoaqMssSg2yc8/aec8e1b3ef2886481ceb45b009d636fb/Ernest_Sim_Half_Profile.jpg
 contentful_profile_pic: hen9o3hfyeuh/3eI3MpojFYcOMKc2Y0QO4Y/84580ab8148abc22468589f24337bbb3/Ernest_Sim_Blue_Frame.png

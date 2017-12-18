@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Furniture Designer | NATHAN YONG DESIGN PTE LTD
 
-tags:
+tags: Singapore | Furniture Designer | Design
 
 contentful_index_pic: hen9o3hfyeuh/7Kmjx5tDhKuCYgCsycgaWG/fd9d7ff9e22c6767e83a64bc47b9dfd4/Nathan_Yong_Profile.png 
 contentful_profile_pic: hen9o3hfyeuh/1I3vZNQfw0om2yAMawA4Em/6958fd3e2fdc3cf9a6fa2a9a593a0ba0/Nathan_Yong_Blue_Frame.png

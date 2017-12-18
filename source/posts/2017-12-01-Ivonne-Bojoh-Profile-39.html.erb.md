@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Co-founder & Chief Experience Officer | GoBear
 
-tags:
+tags: Singapore | CXO | GoBear
 
 contentful_index_pic: hen9o3hfyeuh/6m7x575OrCeu4WScMmsiCq/104e8514d1c958e7c3a8ee64100af05e/Ivonne_Bojoh_01.jpg
 contentful_profile_pic: hen9o3hfyeuh/4bqB9RySFGAikCmiQWom88/631daa81b94b00998dbcde8751a38f39/Ivonne_Bojoh_Blue_Frame.jpg

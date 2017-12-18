@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Product Designer & Co-Founder | ShopBack
 
-tags:
+tags: Singapore | Product Designer | Co-Founder
 
 contentful_index_pic: hen9o3hfyeuh/4WKBud1gu4sYUqgu6OYcg4/d55badde9819d65911d32246a605e77e/Samantha_Soh_Profile.jpg
 contentful_profile_pic: hen9o3hfyeuh/34Hz2zNCyAUW82AWOO8oqo/a281e895f273081dfb647be76f408694/Samantha_Soh_Blue_Frame.jpg
