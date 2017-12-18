@@ -13,7 +13,7 @@
     <ul class="suggestion-list">
       <% blog.articles.select{ |article| article.data.category == 'Profile' }.shuffle.uniq[0...3].each do |a| %>
       <li class="interviewee-suggestion-item">
-        <img src="//images.contentful.com/<%= a.data.contentful_profile_pic %>">
+        <a href="/episodes/<%= a.data.episode_number %>.html"><img src="//images.contentful.com/<%= a.data.contentful_profile_pic %>"></a>
         <a class='other-episodes' href="/episodes/<%= a.data.episode_number %>.html"><%= a.data.interviewee %></a>
         <h3 class="company"><%= a.data.company %></h3>
       </li>
