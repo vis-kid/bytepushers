@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Managing Director | SP Digital | Singapore
 
-tags: Singapore | Managing Director | Programming
+tags: Singapore | Programming
 
 contentful_index_pic: hen9o3hfyeuh/59s0gJvZpmuYuU2kySQeI4/cb8086f93c95e2e294db65ba9b6bf7aa/Sau_Sheong_Chang_Profile.jpg
 contentful_profile_pic: hen9o3hfyeuh/v8FhUixpTME6cskcs8sSA/e6fda21cb6d46820bf6013da336df027/Sau_Sheong_Chang_Blue_Frame.jpg
