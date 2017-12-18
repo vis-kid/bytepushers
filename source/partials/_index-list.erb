@@ -17,7 +17,9 @@
 
 <div class='posts'>
   <ul>
+
     <% page_articles.each do |article| %>
+      <% next if article == first_article  %>
     <li>
 
       <div class='date'><%= article.date.strftime('%b %d | %Y') %></div>
