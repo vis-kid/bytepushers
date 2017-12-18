@@ -6,10 +6,11 @@
       <%= partial "partials/profile-contentful-image" %>
     <% end %>
        <div class="profile-header">
-         <div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div>
-         <h2 class='post-title'><%= interviewee %></h2>
+         <h2 class='profile post-title'><%= interviewee %></h2>
+         <!--<div class='profile-date'><%= current_page.date.strftime('%b %d | %Y') %></div> -->
          <% if current_page.data.company %>
-         <h3 class="company-name"><%= current_page.data.company %></h3>
+         <h3 class="profile company-name"><%= current_page.data.company %></h3>
+         <h4 class="profile-tags"><%= current_page.data.tags %></h4>
          <% end %>
        </div>
 

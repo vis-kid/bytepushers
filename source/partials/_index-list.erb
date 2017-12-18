@@ -1,3 +1,20 @@
+  <div class="featured-wrapper">
+    <article class="profile-article">
+
+    <%  first_article =  blog.articles.select{ |article| article.data.category == 'Profile' }.first %>
+
+    <div class='profilepic-wrapper'>
+      <figure class="image-block__figure">
+        <img src="//images.contentful.com/<%= first_article.data.contentful_profile_pic %>" sizes="(min-width: 1160px) 1160px, 96vw" alt="" class="image-block__figure-image">
+      </figure>
+    </div>
+    <div class="profile-header">
+      <h2 class="featured post-title"><%= link_to first_article.data.interviewee, first_article %></h2>
+      <h3 class="featured company-name"><%= first_article.data.company %></h3>
+      <h4 class="profile-tags"><%= first_article.data.tags %></h4>
+    </div>
+  </div>
+
 <div class='posts'>
   <ul>
     <% page_articles.each do |article| %>
