@@ -6,9 +6,9 @@ date: 2017-12-20
 episode_number: 51
 category: Startups
 
-topic_list: Angel Investor | Cocoon Capital
+topic_list: Tech Achievements | Startup MBA | Young Entrepreneurs
 
-tags: Tech Achievements | Startup MBA | Young Entrepreneurs
+tags:
 
 contentful_index_pic:
 contentful_profile_pic:

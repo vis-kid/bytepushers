@@ -6,9 +6,9 @@ date: 2017-12-18
 episode_number: 49
 category: Startups
 
-topic_list: Angel Investor | Cocoon Capital
+topic_list: Responsibilities | Smart Money | Getting into Investing | First Investment
 
-tags: Responsibilities | Smart Money | Getting into Investing | First Investment
+tags:
 
 contentful_index_pic:
 contentful_profile_pic:
