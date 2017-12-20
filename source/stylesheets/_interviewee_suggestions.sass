@@ -4,6 +4,8 @@ a.other-episodes
   font-size: 24px
   text-transform: uppercase
   margin-top: 40px
+  &:hover
+    opacity: .75
 
 .other-episodes
   display: inline-block
@@ -23,6 +25,18 @@ a.other-episodes
   +media(max-width 850px)
     +shift(1)
     +span-columns(10)
+
+.interviewee-page li.interviewee-suggestion-item
+  +shift(.518)
+
+.interviewee-page
+  +clearfix
+  +shift(1.42)
+  +span-columns(10)
+  margin-top: 40px
+
+.interviewee-page .profile-date
+  margin-bottom: 17px
 
 .interviewee-suggestion-item
   +span-columns(3)

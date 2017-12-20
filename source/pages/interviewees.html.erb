@@ -1,0 +1,12 @@
+<div class="interviewee-page">
+  <ul class="suggestion-list">
+    <% blog.articles.select{ |article| article.data.category == 'Profile' }.each do |a| %>
+    <li class="interviewee-suggestion-item">
+      <div class='profile-date'><%= a.data.date.strftime('%b %d | %Y') %></div>
+      <a href="/episodes/<%= a.data.episode_number %>.html"><img src="//images.contentful.com/<%= a.data.contentful_profile_pic %>"></a>
+      <a class='other-episodes' href="/episodes/<%= a.data.episode_number %>.html"><%= a.data.interviewee %></a>
+      <h3 class="company"><%= a.data.company %></h3>
+    </li>
+    <% end %>
+  </ul>
+</div>
