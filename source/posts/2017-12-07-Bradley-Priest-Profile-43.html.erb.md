@@ -11,7 +11,7 @@ category: Profile
 
 topic_list: Co-founder & CTO | TradeGecko
 
-tags:
+tags: Singapore | CTO | Programming
 
 contentful_index_pic: hen9o3hfyeuh/6wf49tBQoEIgwAsmWW8mwi/83c4624a3e3fd5362e4b255fd0b77c22/Bradley_Priest_.jpg
 contentful_profile_pic: hen9o3hfyeuh/2mbFnk2crGCcyYQ6Ugaa6A/c21f3a027c07633a45a89ab4db316534/Bradley_Priest_Blue_Frame.jpg
