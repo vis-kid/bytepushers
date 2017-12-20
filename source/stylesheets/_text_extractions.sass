@@ -70,10 +70,15 @@ a.tag-list-link
   -webkit-margin-before: 0em
 
 h3.about-header:first-of-type
-  margin-top: -0.2em
+  margin-top: 53px
 
 h3.about-header
-  margin-top: em(20px)
+  font-family: CamptonBoldDemo
+  color: #4a4a4a
+  font-size: 30px
+  line-height: 39px
+  margin-bottom: 8px
+  margin-top: 64px
 
 h2.post-title
   font-family: CamptonBoldDemo
@@ -112,3 +117,19 @@ h3.topic-list
     +span-columns(12)
     text-align: center
     margin-bottom: 50px
+
+article.about.article-detail
+  +shift(2)
+  +span-columns(8)
+
+article.about.article-detail p
+  font-family: CamptonBook
+  color: #4a4a4a
+  font-size: 23px
+  line-height: 32px
+  margin-bottom: 30px
+
+article.about.article-detail p a
+  color: #0060ff
+  &:hover
+    opacity: .75
